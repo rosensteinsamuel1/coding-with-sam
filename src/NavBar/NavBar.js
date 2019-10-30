@@ -1,22 +1,43 @@
-import React from 'react';
-import styles from './NavBar.module.css'
+import React, { useState } from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
-const NavBar = (props) => (
-    <nav>
-        <div className={styles.navLeft}>
-            <ul>
-                <li>Sam Rosenstein</li>
-            </ul>
-        </div>
-        <div className={styles.navRight}>
-            <ul >
-                <li><a href="/">About</a></li>
-                <li><a href="/">Work</a></li>
-                <li><a href="/">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-)
+const Example = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-export default NavBar;
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div>
+      <Navbar color="light" light expand="md">
+        <NavbarBrand href="/">Sam Rosenstein</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            <NavItem>
+              <NavLink href="/">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/">Work</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/">Contact</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
+}
+
+export default Example;
