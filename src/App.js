@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
+import styles from './App.css';
 import Homepage from './Homepage/Homepage'
 import NavBar from './NavBar/NavBar'
 import Jumbo from './Jumbo/Jumbo'
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <NavBar />
       <Jumbo />
       {/* <Homepage /> */}
