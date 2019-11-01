@@ -6,7 +6,6 @@ class Homepage extends Component {
         return(
             <div className={styles.Homepage}>
                 <h1>Welcome to my site</h1>
-
             </div>
         )
     }
