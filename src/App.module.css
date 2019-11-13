@@ -21,4 +21,17 @@
   color: #09d3ac;
 }
 
-html, body { height: 100%; }
+/* Prevent overscrolling */
+body {
+  overscroll-behavior-y: none;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.workContainer {
+  background-color: rgb(228, 231, 235);
+}

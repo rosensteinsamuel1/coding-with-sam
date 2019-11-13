@@ -1,0 +1,8 @@
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul {
+  margin: 20px 0 20px 0;
+  padding-bottom: 20px;
+}

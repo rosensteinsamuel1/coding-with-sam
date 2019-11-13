@@ -1,9 +1,13 @@
-import React from 'react';
-import styles from './App.css';
-import Work from './Work/Work'
-import NavBar from './NavBar/NavBar'
-import Jumbo from './Jumbo/Jumbo'
-import About from './About/About'
+import React from "react";
+import styles from "./App.module.css";
+import Work from "./components/Work/Work";
+import NavBar from "./components/NavBar/NavBar";
+import Jumbo from "./components/Jumbo/Jumbo";
+import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
+
+//TODO: disable extra scrolling on html, body elements to remove whitespace above and below
+// TODO: remove extra whitespace below footer
 
 function App() {
   return (
@@ -11,7 +15,10 @@ function App() {
       <NavBar />
       <Jumbo />
       <About />
-      <Work />
+      <div className={styles.workContainer}>
+        <Work />
+        <Footer />
+      </div>
     </div>
   );
 }
