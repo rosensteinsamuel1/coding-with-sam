@@ -15,7 +15,7 @@ import styles from "./Work.module.css";
 const work = props => {
   return (
     <div className={styles.workContainer}>
-      <div className={styles.title}>
+      <div id="projects" className={styles.title}>
         <h3>My Work</h3>
       </div>
       <Row>

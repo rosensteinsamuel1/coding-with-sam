@@ -1,14 +1,26 @@
 .myPic {
-    width: 50%;       
+  overflow: hidden;
 }
 
 .myPic img {
-    width: auto;
-    height: 450px;
-    margin-left: 50px;
-    margin-bottom: 10px;       
+  width: auto;
+  height: 275px;
+  padding: 25px 0px 25px 50px;
 }
 
-.aboutMe {
-    float: left;
+.aboutContainer {
+  margin-top: 10px;
+  height: 350px;
+  width: 100%;
+}
+
+.aboutText {
+  width: 50%;
+  float: right;
+}
+
+.picContainer {
+  width: 50%;
+  display: inline-block;
+  float: left;
 }

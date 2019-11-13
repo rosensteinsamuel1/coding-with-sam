@@ -1,15 +1,12 @@
-import React from 'react';
-import { Jumbotron, Container } from 'reactstrap';
-import styles from './Jumbo.module.css'
+import React from "react";
+import styles from "./Jumbo.module.css";
 
-const jumbo = (props) => {
+const jumbo = props => {
   return (
-    <div>
-      <Jumbotron fluid>
-        <Container fluid className={styles.jumboContainer}>
-          <h1 className="display-3">I don't bite, I promise!</h1>
-        </Container>
-      </Jumbotron>
+    <div className={styles.jumboFullScreen}>
+      <div className={styles.jumboText}>
+        <h3>I promise i don't bite!</h3>
+      </div>
     </div>
   );
 };

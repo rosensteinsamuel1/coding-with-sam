@@ -1,4 +1,16 @@
-.jumboContainer {
-    text-align: center;
-    height: 9rem;
+.jumboFullScreen {
+  height: 100vh;
+  display: table;
+  text-align: center;
+  width: 100%;
+  background: rgb(228, 231, 235);
+}
+
+.jumboText {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.jumboText h3 {
+  text-align: center;
 }
