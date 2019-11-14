@@ -15,10 +15,11 @@ function App() {
       <NavBar />
       <Jumbo />
       <About />
-      <div className={styles.workContainer}>
+      {/* <div className={styles.workContainer}>
         <Work />
-        <Footer />
-      </div>
+        
+      </div> */}
+      <Footer />
     </div>
   );
 }
