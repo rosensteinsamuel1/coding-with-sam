@@ -8,5 +8,6 @@
 }
 
 .footer {
-  background: rga(228, 231, 235);
+  background-color: rgb(228, 231, 235);
+  padding: 10px 0;
 }
