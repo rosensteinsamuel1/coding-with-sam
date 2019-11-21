@@ -1,24 +1,23 @@
 import React from "react";
-import styles from "./Footer.module.css";
+import { Navbar } from "react-bootstrap";
 
 const footer = props => {
   return (
-    <div className={styles.footer}>
-      <ul>
-        <li>
+    <Navbar sticky="bottom" bg="light" expand="lg">
+      <Navbar.Collapse className="justify-content-center">
+        <Navbar.Text>
           Shoot me an email at{" "}
           <a href="mailto: rosenstein.samuel1@gmail.com">
             rosenstein.samuel1@gmail.com
           </a>
-        </li>
-        <li>
-          Checkout out my{" "}
+        </Navbar.Text>
+        <Navbar.Text>
           <a
             href="https://github.com/rosensteinsamuel1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            github
+            Github
           </a>{" "}
           and{" "}
           <a
@@ -28,9 +27,9 @@ const footer = props => {
           >
             LinkedIn
           </a>
-        </li>
-      </ul>
-    </div>
+        </Navbar.Text>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
